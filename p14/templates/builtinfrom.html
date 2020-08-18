@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Builtin Forms</title>
+
+    <style>
+        body{
+            margin:10px 5%
+        }
+        .forms{
+            display: grid;
+            grid-template-columns: 30% 30% 30%;
+        }
+    </style>
+</head>
+<body>
+<div class="forms">
+    <div class="1">
+        <form method="POST">
+            <h1>Form width p tag </h1>
+                {% csrf_token %}
+                {{form.as_p}}
+                <input type="submit" value="Submit"><br>
+            </form>
+    </div>
+    <div class="1">
+        <form method="POST">
+            <h1>Form width table tag </h1>
+                {% csrf_token %}
+                <table border=1px>{{form.as_table}}</table> <br>
+                <input type="submit" value="Submit"><br>
+            </form>
+    </div>
+    <div class="1">
+        <form method="POST">
+            <h1>Form width ul tag </h1>
+                {% csrf_token %}
+                {{form.as_ul}} <br>
+                <input type="submit" value="Submit">
+            </form>
+    </div>
+</div>
+</body>
+</html>
