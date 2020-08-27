@@ -19,5 +19,5 @@ from my_app.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('forms/', builtinform, name='builtinform')
+    path('', builtinform, name='builtinform')
 ]

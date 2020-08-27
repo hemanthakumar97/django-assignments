@@ -7,5 +7,8 @@ def builtinform(request):
         if form.is_valid():
             data=form.cleaned_data
             return render(request, 'details.html', context=data)
+        else:
+            form=BuiltinForm(request.POST)
+            return render(request,"builtinfrom.html",{"form":form})
     form = BuiltinForm()
     return render(request,"builtinfrom.html",{"form":form})
