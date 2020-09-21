@@ -1,4 +1,4 @@
-"""p17 URL Configuration
+"""p20 URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.2/topics/http/urls/
@@ -15,11 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from myapp.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("pro_list", pro_list, name='pro_list'),
-    path("", index, name='index'),
-    path("update/", update_data, name='update'),
 ]

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update the data</title>
+</head>
+<body>
+    <h1>Data Updation form</h1>
+    <form method="POST">
+        {% csrf_token %}
+        id to be updated: <input type="text" name="id" id=""><br><br>
+        Enetr the data to update: <input type="text" name="updata" id="">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

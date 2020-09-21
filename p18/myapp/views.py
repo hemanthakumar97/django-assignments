@@ -21,5 +21,11 @@ def pro_list(request):
     print(a)
     return render(request,"pro_list.html", context={'a':a})
 
+def update_data(request):
+    if request.method=="POST":
+        id = request.POST["id"]
+        updata = request.POST["updata"]
 
+        a = Subject.objects.filter(id=id).update(subject=updata)
+    return render(request, "update.html")
 
