@@ -1,0 +1,18 @@
+{% load cus_filters %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django filter tags</title>
+</head>
+<body>
+    <h1>Django filter tags</h1>
+    <h3>Name: {{name}}</h3>
+    <h3>Title filter: {{name|title}}</h3>
+    <h3>Upper filter: {{name|upper}}</h3>
+    <h3>Addtition: a+b = {{a}}+{{b}} = {{a|add:b}}</h3>
+    <h3>is_lower: {{name|islower}}</h3>
+    <h3>is_upper: {{name|isupper}}</h3>
+</body>
+</html>
