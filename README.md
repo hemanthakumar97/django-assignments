@@ -1,5 +1,5 @@
 
-<h1>Hello world</h1><br>
+Hello
 ![alternative text it will display when image is not exists](readme_images/1.png)
 <img href="readme_images/1.png">
 <h2>New line</h2>
