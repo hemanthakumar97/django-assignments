@@ -1,10 +1,17 @@
+<h1>Restaurant Management System </h1>
 
-<h1>Hello world</h1><br>
+![Website Images](readme_images/index.jpeg)
 
+<h3>Languages used</h3>
+<li>HTML5</li>
+<li>CSS3</li>
+<li>Javascript</li>
+<li>Bootstrap</li>
 
-![alternative text it will display when image is not exists](readme_images/1.png)
-<img href="readme_images/1.png">
-<h2>New line</h2>
-<ol>
-<li>hello</li>
-</or>
+<h3>Webpages are:</h3>
+<li>Home page</li>
+<li>Menu page</li>
+<li>About us page</li>
+<li>Contact us page</li>
+<li>Payment page</li>
+<li>Cancel order page</li>
